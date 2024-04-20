@@ -1,6 +1,9 @@
 Wisc ID: Gknox2
 Github ID: Gknox2
 
+Link to git repository: https://github.com/gknox2/BlockBreakerGame.git
+Link to github project page: https://github.com/gknox2/BlockBreakerGame
+
 Normal Points
 [X] 2 Points: Create grid of blocks in 3d
 [X] 2 Points: Create balls in 3d
