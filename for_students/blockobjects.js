@@ -71,7 +71,7 @@ export class GrBall extends GrObject {
         let ball = new T.Group();
         let ballgeometry = new T.SphereGeometry(0.1,16,16);
 
-        let ballmesh = new T.Mesh(ballgeometry, new T.MeshStandardMaterial({color: "pink"}));
+        let ballmesh = new T.Mesh(ballgeometry, new T.MeshBasicMaterial({color: "pink"}));
 
 
         ball.add(ballmesh);
