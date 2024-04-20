@@ -1,0 +1,36 @@
+Wisc ID: Gknox2
+Github ID: Gknox2
+
+Normal Points
+[X] 2 Points: Create grid of blocks in 3d
+[X] 2 Points: Create balls in 3d
+[X] 3 Points: Create ball physics that bounce off the blocks, and aiming interface.
+[X] 5 Points: Gameplay element that causes the blocks to move down one row after each successful round.
+[X] 2 Points: Increment users number off balls after each successful round.
+[X] 8 Points: Create overall game mechanics that store your level, end the game if a block reaches the last row and spawn blocks in the top row before each round (as the level increases, the chance of more blocks spawning and with more health must increase).
+[X] 2 Points: The blocks change color through a gradient depending on how much health they have. Green for blocks with low health and red for blocks with more health.
+23/23
+Advanced points: 
+[X] 4 Points: Create an aesthetically appealing moving background using 3d elements. [flying stars and skybox]
+[X] 3 Points:  Create an input in the user interface that allows for the game to be sped up, useful for later rounds when the rounds can take a long time.
+7/7
+
+Total:
+30/30
+
+Brief explanation of what I did: I also detailed it in comments
+I started by creating a array list grid using a double for loop, this way I can access each specific position that a block could 
+be in. Then I used a difficulty function to fill the top row of the grid with blocks to start the game. The blocks and balls I created
+as GrObjects in the blockobjects.js script. I used event listeners to allow the user to aim and shoot balls. After all of the balls have
+left the gameplay area, the round is incremented and states are changed. Then the blocks are moved down a row and new blocks are created 
+in the first row. If a block reaches the last row, the game is over. I was unable to create a gameover screen like I had wanted to. Instead,
+the animate function just stops updating and the browser needs to be reloaded to play again. 
+
+
+
+Images:
+
+- Skybox1.png through Skybox6.png
+    - Source: https://gamebanana.com/mods/7195
+    - Author: Mr.Who
+    - License: Creative Commons non-commercial

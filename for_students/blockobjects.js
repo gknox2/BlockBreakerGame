@@ -3,8 +3,9 @@ import * as T from "../libs/CS559-Three/build/three.module.js";
 import { GrWorld } from "../libs/CS559-Framework/GrWorld.js";
 import { GrObject } from "../libs/CS559-Framework/GrObject.js";
 
-
+// function for getting the color of the block based off of it's health
 function getcolor(health) {
+    //normalize health so that the RGB values can't go out of their normal ranges
     let healthnormal = Math.min(Math.max(health / 30, 0), 1)
 
     //dynamic coloring
@@ -39,6 +40,8 @@ function getcolor(health) {
 
 }
 
+
+// basic GrObject class for the block
 export class GrBlock extends GrObject {
     constructor(params = {}) {
         
@@ -62,7 +65,7 @@ export class GrBlock extends GrObject {
 
 }
 
-
+// basic GrObject class for GrBall
 export class GrBall extends GrObject {
     constructor(params = {}) {
         let ball = new T.Group();
